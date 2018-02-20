@@ -1,8 +1,8 @@
 package org.mvpigs.pigcoins;
 
-import org.mvpigs.Pigcoin.BlockChain;
-import org.mvpigs.Pigcoin.Transaction;
-import org.mvpigs.Pigcoin.Wallet;
+import org.mvpigs.pigcoins.BlockChain;
+import org.mvpigs.pigcoins.Transaction;
+import org.mvpigs.pigcoins.Wallet;
 
 import junit.framework.TestCase;
 import org.junit.*;
