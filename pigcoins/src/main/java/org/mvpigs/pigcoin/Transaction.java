@@ -45,4 +45,18 @@ public class Transaction {
     public PublicKey getpKey_recipient() {
         return pKey_recipient;
     }
+    public void setPigcoins(double pigcoins) {
+        this.pigcoins = pigcoins;
+    }
+
+    public double getPigcoins() {
+        return pigcoins;
+    }
+    public void setHash(String hash) {
+        this.hash = hash;
+    }
+
+    public String getHash() {
+        return hash;
+    }
 }
