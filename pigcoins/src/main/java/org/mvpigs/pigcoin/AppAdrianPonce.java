@@ -1,5 +1,10 @@
 package org.mvpigs.pigcoins;
 
+
+import org.mvpigs.pigcoins.BlockChain;
+import org.mvpigs.pigcoins.Transaction;
+import org.mvpigs.pigcoins.Wallet;
+
 import java.security.KeyPair;
 import java.util.Map;
 
