@@ -22,5 +22,15 @@ public class Transaction {
         this.pigcoins = pigcoins;
         this.message = message;
     }
-    
+    public String toString() {
+        String transaction = "";
+        transaction += "\nhash = "+getHash()+"\n";
+        transaction += "\nprev_hash = "+getPrev_hash()+"\n";
+        transaction += "\npKey_sender = "+getPkey_sender()+"\n";
+        transaction += "\npKey_recipient = "+getPkey_recipient()+"\n";
+        transaction += "\nmensaje = "+getMessage()+"\n";
+        return transaction;
+    }
+}
+
 }
