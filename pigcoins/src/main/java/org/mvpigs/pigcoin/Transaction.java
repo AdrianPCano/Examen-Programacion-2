@@ -31,6 +31,12 @@ public class Transaction {
         transaction += "\nmensaje = "+getMessage()+"\n";
         return transaction;
     }
-}
 
+    public void setpKey_sender(PublicKey pKey_sender) {
+        this.pKey_sender = pKey_sender;
+    }
+    
+    public PublicKey getpKey_sender() {
+        return pKey_sender;
+    }
 }
