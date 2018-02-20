@@ -40,4 +40,7 @@ public class BlockChain {
             System.out.println(trx.toString());
         }
     }
+    public void summarize(int posicion){
+        System.out.println(blockchain.get(posicion));
+    }
 }

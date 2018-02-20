@@ -24,11 +24,11 @@ public class Transaction {
     }
     public String toString() {
         String transaction = "";
-        transaction += "\nhash = "+getHash()+"\n";
-        transaction += "\nprev_hash = "+getPrev_hash()+"\n";
-        transaction += "\npKey_sender = "+getPkey_sender()+"\n";
-        transaction += "\npKey_recipient = "+getPkey_recipient()+"\n";
-        transaction += "\nmensaje = "+getMessage()+"\n";
+        transaction += "\n hash = "+getHash()+"\n";
+        transaction += "\n prev_hash = "+getPrev_hash()+"\n";
+        transaction += "\n pKey_sender = "+getPkey_sender()+"\n";
+        transaction += "\n pKey_recipient = "+getPkey_recipient()+"\n";
+        transaction += "\n mensaje = "+getMessage()+"\n";
         return transaction;
     }
 
