@@ -35,5 +35,9 @@ public class BlockChain {
     public boolean isSignatureValid(PublicKey sender, String message, byte[] messageSigned) {
         return GenSig.verify(sender, message, messageSigned);
     }
-
+    public void summarize(){
+        for (Transaction trx: blockchain) {
+            System.out.println(trx.toString());
+        }
+    }
 }
