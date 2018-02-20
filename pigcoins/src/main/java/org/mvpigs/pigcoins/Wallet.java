@@ -15,5 +15,15 @@ public class Wallet {
     private double balance = 0d;
     private ArrayList<Transaction> inputTransactions = new ArrayList();
     private ArrayList<Transaction> outputTransactions = new ArrayList();
+
+    //Constructor
+    public Wallet() {
+    }
+
+    public void generateKeyPair(){
+        KeyPair pair = GenSig.generateKeyPair();
+        setAddress(pair.getPublic());
+        setSK(pair.getPrivate());
+    }
 }
 
