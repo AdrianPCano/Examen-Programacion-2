@@ -11,4 +11,16 @@ public class BlockChain {
 
     ArrayList<Transaction> blockchain = new ArrayList<Transaction>();
 
+    //Constructor
+    public BlockChain(){
+    }
+
+    public ArrayList<Transaction> getBlockChain() {
+        return this.blockChain;
+    }
+
+    public void addOrigin(Transaction transaction) {
+        blockChain.add(transaction);
+    }
+
 }
