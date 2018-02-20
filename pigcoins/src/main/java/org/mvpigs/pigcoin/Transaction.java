@@ -8,5 +8,19 @@ public class Transaction {
     private double pigcoins = 0; 
     private String message = null; 
     private byte[] signature = null;
+    
 
+    //Constructor
+    public Transaction() {
+    }
+
+    public Transaction(String hash, String prev_hash, PublicKey pKey_sender, PublicKey pKey_recipient, double pigcoins, String message) {
+        this.hash = hash;
+        this.prev_hash = prev_hash;
+        this.pKey_sender = pKey_sender;
+        this.pKey_recipient = pKey_recipient;
+        this.pigcoins = pigcoins;
+        this.message = message;
+    }
+    
 }
