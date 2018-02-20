@@ -35,8 +35,14 @@ public class Transaction {
     public void setpKey_sender(PublicKey pKey_sender) {
         this.pKey_sender = pKey_sender;
     }
-    
     public PublicKey getpKey_sender() {
         return pKey_sender;
+    }
+    public void setpKey_recipient(PublicKey pKey_recipient) {
+        this.pKey_recipient = pKey_recipient;
+    }
+
+    public PublicKey getpKey_recipient() {
+        return pKey_recipient;
     }
 }
