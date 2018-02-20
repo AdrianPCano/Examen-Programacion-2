@@ -1,8 +1,12 @@
-package org.mvpigs.pigcoin;
+package org.mvpigs.pigcoins;
 
-import java.security.PublicKey;
-import java.util.ArrayList;
+public class Transaction {
+    private String hash = null; 
+    private String prev_hash = null; 
+    private PublicKey pKey_sender = null;
+    private PublicKey pKey_recipient = null;
+    private double pigcoins = 0; 
+    private String message = null; 
+    private byte[] signature = null;
 
-public class BlockChain {
-
-    ArrayList<Transaction> blockchain = new ArrayList<Transaction>();
+}
