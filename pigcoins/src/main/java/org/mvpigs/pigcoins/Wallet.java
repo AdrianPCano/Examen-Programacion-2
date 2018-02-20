@@ -50,6 +50,29 @@ public class Wallet {
     public PrivateKey getSKey() {
         return sKey;
     }
-    
+    public void setBalance() {
+        double balance =  getTotalInput() - getTotalOutput();
+        if (balance >= 0) {
+         this.balance = balance;
+        }
+    }
+    public void loadCoins(BlockChain blockChain) {
+        double totalIn = 0d;
+        double totalOut = 0d;
+        for (Transaction transaction : blockChain.getBlockChain()) {
+            if (transaction.getpKey_sender().equals(transaction.getpKey_recipient())
+                    && transaction.getpKey_sender().equals(getAddress())) {
+                totalIn += transaction.getPigcoins();
+                totalOut += transaction.getPigcoins();
+            } else if (transaction.getpKey_recipient().equals(getAddress())) {
+                totalIn += transaction.getPigcoins();
+            } else if (transaction.getpKey_sender().equals(getAddress())) {
+                totalOut += transaction.getPigcoins();
+        }
+        setTotal_output(totalOut);
+        setTotal_input(totalIn);
+        setBalance();
+        }
+    }
 }
 
