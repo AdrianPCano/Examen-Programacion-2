@@ -23,4 +23,13 @@ public class BlockChain {
         blockChain.add(transaction);
     }
 
+    public boolean isConsumedCoinValid(Map<String,Double> usedCoins) {
+        for (Map.Entry<String, Double> usedCoin : usedCoins.entrySet()) {
+            if (getBlockChain().contains(usedCoin.getKey())) {
+                return false;
+            }
+        }
+        return true;
+    }
+
 }
